@@ -1,3 +1,5 @@
+📌 이 저장소는 프론트엔드 개발자 포트폴리오용으로 정리된 별도 README입니다.
+
 <h1 align="center">안녕하세요 👋 김민석입니다</h1>
 <h3 align="center">JavaScript 기반 기능 구현과 React 개발에 집중하고 있는 프론트엔드 개발자 김민석입니다.</h3>
 

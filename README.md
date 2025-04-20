@@ -15,7 +15,7 @@
 
 ## 🔥 주요 프로젝트
 
-### **1️⃣ 리액트 가계부 웹앱**
+### **1️⃣ 팀 프로젝트 리액트 가계부 웹앱**
 - 🔗 [Demo 바로가기](http://popola1.dothome.co.kr/)
 - 💻 [GitHub 소스 코드](https://github.com/kimminseock/Team-Project-Portfolio.git)
 - 📄 [기능/역할 상세 PDF](https://github.com/kimminseock/ReactTeamProject_pdf.git)

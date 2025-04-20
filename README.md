@@ -85,11 +85,6 @@ CSS 애니메이션과 Web Animation API, IntersectionObserver 등을 활용하�
 `HTML5`, `CSS3`, `JavaScript`, `Web Animation API`, `IntersectionObserver`
 
 🧩 문제 해결 사례
-- 🔸 **문제:** 메인/서브 페이지 애니메이션 충돌로 초기 로딩 지연  
-  🔧 **해결:** CSS 애니메이션과 JS 애니메이션이 동시에 적용되면서 충돌이 생겨,  
-  메인 페이지는 `@keyframes` 기반 CSS 애니메이션으로,  
-  서브 페이지는 `Web Animation API`를 사용해서 **역할을 나눠 적용**해 부드럽게 작동되도록 개선했습니다.
-
 - 🔸 **문제:** 모바일 메뉴 버튼 작동 불안정  
   🔧 **해결:** `toggle()` 방식으로만 열고 닫다 보니 간헐적으로 버튼이 먹히지 않았습니다.  
   그래서 `classList.contains()`로 **현재 열려 있는지 먼저 확인한 뒤**,  

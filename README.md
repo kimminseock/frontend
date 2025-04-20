@@ -16,7 +16,7 @@
 ## 🔥 주요 프로젝트
 
 ### **1️⃣ 팀 프로젝트 리액트 가계부 웹앱**
-- 🔗 [웹사이트 바로가기](http://popola1.dothome.co.kr/)
+- 🔗 [리액트 가계부 웹사이트 바로가기](http://popola1.dothome.co.kr/)
 - 💻 [GitHub 소스 코드](https://github.com/kimminseock/Team-Project-Portfolio.git)
 - 📄 [기능/역할 상세 PDF](https://github.com/kimminseock/ReactTeamProject_pdf.git)
 
@@ -64,7 +64,7 @@
 ---
 
 ### **2️⃣ TodoList 웹앱 (Vanilla JS)**
-- 🔗 [웹사이트 바로가기](http://popola1.dothome.co.kr/to_do_list/index.html)
+- 🔗 [TodoList 웹사이트 바로가기](http://popola1.dothome.co.kr/to_do_list/index.html)
 - 💻 [GitHub 소스 코드](https://github.com/kimminseock/Todolist)
 
 HTML/CSS와 순수 JavaScript로 제작한 CRUD 기능 완비형 투두리스트입니다.  
@@ -88,7 +88,7 @@ HTML/CSS와 순수 JavaScript로 제작한 CRUD 기능 완비형 투두리스트
 ---
 
 ### **3️⃣ 제빵 만드는 방법 소개 사이트**
-- 🔗 [웹사이트 바로가기](http://popola1.dothome.co.kr/bread/bakery.html)
+- 🔗 [제빵 소개 웹사이트 바로가기](http://popola1.dothome.co.kr/bread/bakery.html)
 - 💻 [GitHub 소스 코드](https://github.com/kimminseock/Personal-Portfolio.git)
 
 **AI 이미지와 인터랙션 중심의 정보 제공형 웹사이트**입니다.  
@@ -119,7 +119,7 @@ CSS 애니메이션과 Web Animation API, IntersectionObserver 등을 활용하�
 ---
 
 ### **4️⃣ e-book 창작 사이트**
-- 🔗 [개발중인 e-book 바로가기](http://popola1.dothome.co.kr/e_book/index.html)
+- 🔗 [개발중인 e-book 웹사이트 바로가기](http://popola1.dothome.co.kr/e_book/index.html)
 - 💻 [GitHub 소스 코드](https://github.com/kimminseock/e-book)
 
 **웹 인터랙션과 콘텐츠 필터링이 강화된 전자책 창작 플랫폼**입니다.  

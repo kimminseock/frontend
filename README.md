@@ -28,6 +28,27 @@
 - Firebase Realtime Database를 활용한 실시간 데이터 저장
 - Excel 다운로드 기능
 
+- 🌱 **리액트 가계부 나의 기여도**
+1. 화면 구성 및 기능 개발 (React):
+
+   - React를 이용해 웹페이지 화면을 만들고, 데이터를 쉽게 입력할 수 있도록 구현
+
+   - useState, useEffect를 사용해 화면이 자동으로 바뀌도록 설정
+
+2. 데이터 저장 및 관리 (Firebase):
+
+   - Firebase를 이용해 사용자의 수입/지출 기록을 저장하고 불러오는 기능 개발
+
+3. 데이터 시각화 및 검색 기능:
+
+   - Recharts 라이브러리를 이용해 월별 수입/지출을 그래프로 표시
+
+   - 원하는 내역을 쉽게 찾을 수 있도록 검색 및 필터 기능 구현
+
+4. ChatGPT API 연동:
+
+   -  사용자의 소비 습관을 분석하고 간단한 조언을 제공하는 기능 개발
+
 🛠 사용 기술:  
 `React`, `Firebase`, `Recharts`, `HTML`, `CSS`, `JavaScript`
 

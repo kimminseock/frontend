@@ -50,7 +50,6 @@
    -  사용자의 소비 습관을 분석하고 간단한 조언을 제공하는 기능 개발
 
 🧩 문제 해결 사례
-
 - 🔸 **문제:** Firebase에서 데이터를 가져올 때 화면 반영 지연 발생  
   🔧 **해결:** 데이터를 받아온 후 화면에 바로 반영되지 않는 문제가 있어,  
   `useEffect`와 `onValue`를 함께 사용하여 **데이터가 변경되자마자 바로 화면이 업데이트되도록** 수정했습니다.
@@ -58,7 +57,6 @@
 - 🔸 **문제:** 거래 내역 전체 불러오기 후 필터링하니 검색 속도 느림  
   🔧 **해결:** 처음엔 모든 데이터를 불러와서 필터링했지만,  
   **필요한 데이터만 쿼리로 가져오도록 `orderByChild`와 `equalTo`를 사용해** 검색 속도를 개선했습니다.
-
 
 🛠 사용 기술:  
 `React`, `Firebase`, `Recharts`, `XLSX`, `date-fns`, `ChatGPT API`, `HTML`, `CSS`, `JavaScript`
@@ -72,13 +70,11 @@
 HTML/CSS와 순수 JavaScript로 제작한 CRUD 기능 완비형 투두리스트입니다.  
 로컬스토리지, 다크모드, 반응형 디자인 등 실생활 사용성을 고려해 구현했습니다.
 
-메인 페이지는 @keyframes 기반 CSS 애니메이션을 사용하여 가볍고 빠르게 동작하도록 구성했고,  
-서브 페이지는 Web Animation API를 사용하여 색상 전환 등 세밀한 인터랙션을 구현했습니다.
-
-- CRUD 기능 (추가 / 불러오기 / 개별 삭제 / 전체 삭제)
-- 다크 모드 토글 기능
-- 로컬스토리지 적용으로 데이터 유지
-- 반응형 웹 설계
+- 할 일 추가 / 목록 불러오기  
+- 선택 삭제 / 마지막 항목 삭제 / 전체 삭제  
+- 로컬스토리지로 데이터 유지  
+- 다크모드 전환 (토글 스위치)  
+- 모바일 최적화 반응형 UI  
 
 🛠 사용 기술:  
 `HTML5`, `CSS3`, `JavaScript (ES6+)`, `Web Storage API`
@@ -102,13 +98,21 @@ HTML/CSS와 순수 JavaScript로 제작한 CRUD 기능 완비형 투두리스트
 **AI 이미지와 인터랙션 중심의 정보 제공형 웹사이트**입니다.  
 CSS 애니메이션과 Web Animation API, IntersectionObserver 등을 활용하여 UX를 강화했습니다.
 
-- 슬라이드 기능, AI 이미지 소개
-- 메인/서브 페이지로 구성된 구조
-- 서브 페이지 Web Animation API 기반 컬러 전환 효과
-- 반응형 설계, IntersectionObserver 활용
+- 슬라이드 기능, AI 이미지 소개  
+- 메인/서브 페이지로 구성된 구조  
+- 반응형 설계, IntersectionObserver 활용  
 
 🛠 사용 기술:  
 `HTML5`, `CSS3`, `JavaScript`, `Web Animation API`, `IntersectionObserver`
+
+📌 애니메이션 설계 전략:
+
+- 메인 페이지는 텍스트 등장 및 슬라이드 전환 등 인터랙션을 `@keyframes` 기반의 CSS 애니메이션으로 구현하고,  
+  JavaScript는 `.next`, `.prev` 클래스를 토글하는 트리거 역할만 수행합니다.  
+
+- 반면, 서브 페이지는 `Web Animation API`를 활용하여  
+  이미지의 **흑백 → 컬러 전환**, **IntersectionObserver**를 통한 요소 등장 애니메이션 등을 구성했으며,  
+  **스크롤 기반 인터랙션 중심으로 섬세한 효과 구현**에 집중했습니다.
 
 🧩 문제 해결 사례
 - 🔸 **문제:** 모바일 메뉴 버튼 작동 불안정  
@@ -125,18 +129,20 @@ CSS 애니메이션과 Web Animation API, IntersectionObserver 등을 활용하�
 **웹 인터랙션과 콘텐츠 필터링이 강화된 전자책 창작 플랫폼**입니다.  
 jQuery, Swiper.js, AOS, GSAP 등 다양한 라이브러리와 커스텀 코드를 혼합하여 풍부한 사용자 경험을 제공했습니다.
 
-- 커스텀 슬라이드, Swiper.js Coverflow/카드 효과
-- 카테고리 필터링 + AOS 애니메이션 재실행
-- GSAP ScrollTrigger 기반 배경 색상 전환
-- 타이핑 애니메이션, 반응형 설계
+📌 주요 기능:
+- 커스텀 메인 슬라이드: jQuery 기반 `.animate()` 슬라이더
+- Swiper.js Coverflow / 카드 슬라이드 효과
+- 카테고리 클릭 → AOS 애니메이션 재실행 구조
+- GSAP ScrollTrigger 기반 섹션 배경 전환
+- 책 소개 영역 타이핑 애니메이션
+- 모바일 기준 반응형 레이아웃 구성
 
 🛠 사용 기술:  
 `HTML5`, `CSS3`, `JavaScript`, `jQuery`, `Swiper.js`, `GSAP`, `ScrollTrigger`, `AOS`
 
 🧩 문제 해결 사례
 - 🔸 **문제:** GSAP ScrollTrigger와 AOS 충돌로 애니메이션 중복 실행  
-  🔧 **해결:** 스크롤 애니메이션이 두 번 실행되는 문제가 있어,  
-  AOS는 `once: true` 옵션으로 한 번만 실행되게 하고,  
+  🔧 **해결:** AOS는 `once: true` 옵션으로 한 번만 실행되게 하고,  
   GSAP은 `refresh()`를 사용해서 **초기화 시점을 명확히 잡아 충돌을 방지했습니다.**
 
 - 🔸 **문제:** 모바일에서 Swiper Coverflow가 깨짐  
@@ -158,6 +164,9 @@ jQuery, Swiper.js, AOS, GSAP 등 다양한 라이브러리와 커스텀 코드�
     <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg" width="40"><br>jQuery</td>
   </tr>
 </table>
+
+🔧 추가 기술:  
+`Recharts`, `XLSX`, `date-fns`, `ChatGPT API`, `Swiper.js`, `GSAP`, `AOS`, `Web Animation API`
 
 ---
 
